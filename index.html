@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Wellbeing Kitchener </title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <link rel="stylesheet" href="https://js.arcgis.com/4.31/esri/themes/light/main.css">
+<script src="https://js.arcgis.com/4.31/"></script>
+<div id="sidebar">
+<h2>Community Equity Explorer</h2>
+<p class="subtitle">
+   Select factors, direction, and importance score.
+</p>
+<label for="colorRamp">Color ramp</label>
+<select id="colorRamp">
+<option value="redGreen">Red → Green</option>
+<option value="yellowBlue">Yellow → Blue</option>
+<option value="whiteBlack">White → Black</option>
+</select>
+<div class="button-row">
+<button id="selectAllBtn" type="button">Select All</button>
+<button id="clearAllBtn" type="button">Clear All</button>
+</div>
+<div id="factorList">
+   Loading factors...
+</div>
+<div id="formulaBox">
+<h3>Current Formula</h3>
+<div id="formulaText">Formula will appear here.</div>
+ <div id="rankingBox">
+<h3>Ranking</h3>
+<button id="rankingBtn" type="button">
+   Calculate Top / Bottom 10
+</button>
+<div id="top10">
+<h4>Top 10 DA</h4>
+<ol id="top10List"></ol>
+</div>
+<div id="bottom10">
+<h4>Bottom 10 DA</h4>
+<ol id="bottom10List"></ol>
+</div>
+</div>
+<div id="printBox">
+<button id="printBtn" type="button">
+   Print / Save PDF
+</button>
+</div> 
+</div>
+<div id="legendDiv"></div>
+<div id="info">
+<h3>Click a DA</h3>
+<p>Custom final score will appear here.</p>
+</div>
+</div>
+<div id="viewDiv"></div>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
